@@ -57,5 +57,8 @@ nav ul li a:hover{
     padding-top: 30px;
     font-size: large;
 }
+.container {
+  overflow: auto;
+}
 
 
