@@ -72,3 +72,6 @@ h5{
     margin-top: -5%;
     text-align: center;
 }
+.container {
+  overflow: auto;
+}
