@@ -45,3 +45,6 @@ nav ul li a{
 nav ul li a:hover{
     color: rgba(228, 80, 220, 0.808);
 }
+.container {
+  overflow: auto;
+}
