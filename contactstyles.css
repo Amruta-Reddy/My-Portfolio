@@ -54,3 +54,6 @@ a {
 .contact-details .col-lg-4 .box-hover:hover{
     background-color: #c2ebe4;
 }
+.container {
+  overflow: auto;
+}
