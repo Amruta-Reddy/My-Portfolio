@@ -26,3 +26,6 @@
     justify-content: end;
 
 }
+.container {
+  overflow: auto;
+}
