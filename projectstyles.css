@@ -1,4 +1,4 @@
-*{
+*{  
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,7 @@
     font-family: 'Dancing Script', cursive;
 }
 .bg{
+    overflow-y: scroll;
   background-image: url('images/bg.jpg');
   background-size: cover;
   background-position: center center;
@@ -45,9 +46,7 @@ nav ul li a{
 nav ul li a:hover{
     color: rgba(228, 80, 220, 0.808);
 }
-.container {
-  overflow: auto;
-}
+
 
 /* --------------------------------  PROJECTS  --------------------------------  */
 .proj h1{
@@ -71,7 +70,4 @@ h5{
 .des{
     margin-top: -5%;
     text-align: center;
-}
-.container {
-  overflow: auto;
 }
