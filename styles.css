@@ -4,9 +4,7 @@
     padding: 0;
 }
 
-body {
-    font-family: cursive;
-}
+
 .bg{
 background-image: url('images/background.png');
   background-size: cover;
