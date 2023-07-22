@@ -1,15 +1,15 @@
-*{
+/* UTILITIES */
+* {
     margin: 0;
     padding: 0;
 }
-.name{
-    background-size: 100px;
-    font-family: 'Dancing Script', cursive;
+
+body {
+    font-family: cursive;
 }
 .bg{
-  background-image: url('images/bg.jpg');
+background-image: url('images/background.png');
   background-size: cover;
-  background-position: center center;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -19,32 +19,94 @@
   bottom: 0;
   z-index: -1;
 }
-.first{
-    position: relative;
-    width: 100%;
-    height: 100vh;
+a {
+    text-decoration: none;
 }
-nav{
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
     display: flex;
-    width: 84%;
-    margin: auto;
-    padding: 20px 0;
     align-items: center;
     justify-content: space-between;
-}
-nav ul li{
-    display: inline-flex;
-    list-style: none;
-    margin: 10px 20px;
-}
-nav ul li a{
-    text-decoration: none;
+    padding: 35px;
     color: black;
+    width: 84%;
+    margin: auto;
+
+}
+
+.nav-links a {
+    color: black;
+}
+
+/* LOGO */
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    padding-left: 5%;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
     font-weight: bold;
 }
-nav ul li a:hover{
-    color: rgba(228, 80, 220, 0.808);
+
+.menu li a:hover {
+    color: rgb(193, 21, 130);
+    
+    
 }
-.container {
-  overflow: auto;
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: right;
+        
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+
 }
