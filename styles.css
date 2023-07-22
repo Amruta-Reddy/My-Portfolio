@@ -6,7 +6,7 @@
 
 
 .bg{
-background-image: url('images/background.png');
+background-image: url('file:///D:/Projects/New%20folder/images/background.png');
   background-size: cover;
   position: fixed;
   height: 100%;
@@ -27,13 +27,17 @@ li {
 
 /* NAVBAR STYLING STARTS */
 .navbar {
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 35px;
+    /* padding: 35px; */
     color: black;
-    width: 84%;
-    margin: auto;
+
 
 }
 
@@ -45,14 +49,19 @@ li {
 .logo {
     font-family: 'Dancing Script', cursive;
     font-size: 45px;
-    padding-left: 5%;
+    padding-left: 8%;
+    display: flex;
 }
 
 /* NAVBAR MENU */
 .menu {
+    list-style: none;
+
+  margin: 0;
+  padding-right: 100px;
     display: flex;
     gap: 1em;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
