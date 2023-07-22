@@ -6,7 +6,7 @@
 
 
 .bg{
-background-image: url('file:///D:/Projects/New%20folder/images/background.png');
+background-image: url('images/background.png');
   background-size: cover;
   position: fixed;
   height: 100%;
